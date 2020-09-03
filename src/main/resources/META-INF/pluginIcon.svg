@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="31.8" height="31.8"
+     viewBox="0 0 3000 3000">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-size: 333.333px;
+      }
+
+      .cls-2 {
+        fill: #636;
+      }
+
+      .cls-2, .cls-3 {
+        text-anchor: middle;
+        font-family: "Marriage Moment Personal Use";
+      }
+
+      .cls-3 {
+        fill: #6ec2b3;
+      }
+    </style>
+  </defs>
+  <text transform="translate(352 2844) scale(8.82)" class="cls-1"><tspan x="0" class="cls-2">O</tspan></text>
+  <text transform="matrix(7.9383, -0.4982, 0.4982, 7.9383, 1099, 2939)" class="cls-1"><tspan x="0" class="cls-3">l</tspan></text>
+</svg>

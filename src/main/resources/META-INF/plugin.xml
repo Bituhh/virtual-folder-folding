@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>uk.org.oliveira.virtual_folder_folding</id>
+    <name>Virtual Folder Folding</name>
+    <version>1.0.0</version>
+    <vendor email="victor@oliveira.org.uk" url="http://www.oliveira.org.uk">Oliveira.org.uk</vendor>
+
+    <description><![CDATA[
+    A virtual folder folding plugin for <em>any</em> application!
+    Simple setup the path on the settings page.
+
+    This is an extensions to original <a href="https://plugins.jetbrains.com/plugin/10090-angular-component-folding">Angular Component Folding</a>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <applicationService serviceImplementation="uk.org.oliveira.fold.VirtualFoldingState"
+                            id="uk.org.oliveira.fold.VirtualFoldingState"/>
+        <treeStructureProvider implementation="uk.org.oliveira.fold.TreeStructureProvider"/>
+        <applicationConfigurable parentId="other"
+                                 instance="uk.org.oliveira.fold.VirtualFoldingSettingsConfigurable"
+                                 id="uk.org.oliveira.fold.VirtualFoldingSettingsConfigurable"
+                                 displayName="Virtual Folder Folding"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+
+    </actions>
+</idea-plugin>
