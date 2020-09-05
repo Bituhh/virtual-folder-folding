@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'uk.org.oliveira'
-version '1.0-SNAPSHOT'
+version '1.0.1'
 
 repositories {
     mavenCentral()
@@ -20,6 +20,13 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+    <ul>
+        <li>fix "remove" button</li>
+        <li>removes move up/down actions</li>
+    </ul>
+      """
+}
+
+publishPlugin {
+   token = System.getenv("uk_org_oliveira_intellijPublishToken")
 }

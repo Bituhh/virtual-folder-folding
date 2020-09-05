@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>uk.org.oliveira.virtual_folder_folding</id>
     <name>Virtual Folder Folding</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <vendor email="victor@oliveira.org.uk" url="http://www.oliveira.org.uk">Oliveira.org.uk</vendor>
 
     <description><![CDATA[

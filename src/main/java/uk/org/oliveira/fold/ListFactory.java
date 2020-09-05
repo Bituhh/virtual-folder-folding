@@ -24,8 +24,12 @@ public class ListFactory {
         decorator.setAddAction(button -> {
             String input = Messages.showInputDialog("Which option would you like to add?", "Add Option", Messages.getQuestionIcon());
             this.model.add(input);
-            this.list.setListData(new Vector<>(this.model));
-        });
+            this.list.setListData(this.getValues());
+        }).setRemoveAction(button -> {
+            String selectedValue = this.list.getSelectedValue();
+            this.model.remove(selectedValue);
+            this.list.setListData(this.getValues());
+        }).disableUpDownActions();
     }
 
     public Set<String> getModel() {

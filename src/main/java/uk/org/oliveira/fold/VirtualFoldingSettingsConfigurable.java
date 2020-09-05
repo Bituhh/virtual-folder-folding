@@ -1,6 +1,5 @@
 package uk.org.oliveira.fold;
 
-import com.esotericsoftware.minlog.Log;
 import com.intellij.openapi.options.Configurable;
 import com.intellij.openapi.options.ConfigurationException;
 import org.jetbrains.annotations.Nls;
