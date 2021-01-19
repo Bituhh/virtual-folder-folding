@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>uk.org.oliveira.virtual_folder_folding</id>
     <name>Virtual Folder Folding</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor email="victor@oliveira.org.uk" url="http://www.oliveira.org.uk">Oliveira.org.uk</vendor>
 
     <description><![CDATA[
@@ -15,7 +15,7 @@
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
-
+    <idea-version since-build="191" until-build="203.*"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->

@@ -1,10 +1,10 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.21'
+    id 'org.jetbrains.intellij' version '0.6.5'
 }
 
 group 'uk.org.oliveira'
-version '1.0.1'
+version '1.0.2'
 
 repositories {
     mavenCentral()
@@ -17,9 +17,15 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2020.2.1'
+    updateSinceUntilBuild false
 }
 patchPluginXml {
     changeNotes """
+    <h2>current</h2>
+    <ul>
+        <li>extends build 191-203.*</li>
+    </ul>
+    <h2>v1.0.1</h2>
     <ul>
         <li>fix "remove" button</li>
         <li>removes move up/down actions</li>
@@ -28,5 +34,5 @@ patchPluginXml {
 }
 
 publishPlugin {
-   token = System.getenv("uk_org_oliveira_intellijPublishToken")
+   token System.getenv("uk_org_oliveira_intellijPublishToken")
 }
