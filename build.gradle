@@ -1,10 +1,10 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.6.5'
+    id 'org.jetbrains.intellij' version '0.7.3'
 }
 
 group 'uk.org.oliveira'
-version '1.0.2'
+version '1.0.3'
 
 repositories {
     mavenCentral()
@@ -16,12 +16,16 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2020.2.1'
+    version '2021.1.1'
     updateSinceUntilBuild false
 }
 patchPluginXml {
     changeNotes """
     <h2>current</h2>
+    <ul>
+        <li>extends build 191.* onwards</li>
+    </ul>
+    <h2>v1.0.2</h2>
     <ul>
         <li>extends build 191-203.*</li>
     </ul>
