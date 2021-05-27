@@ -27,17 +27,16 @@ public class VirtualFoldingSettingsConfigurable implements Configurable {
     @Override
     public boolean isModified() {
         VirtualFoldingState state = VirtualFoldingState.getInstance();
-        boolean modified = false;
         if (!Arrays.equals(settingsComponent.getComponentTypes().getValues(), state.componentTypes) ||
                 !Arrays.equals(settingsComponent.getExtensionTypes().getValues(), state.extensionTypes) ||
                 !Arrays.equals(settingsComponent.getSpecTypes().getValues(), state.specTypes) ||
                 settingsComponent.getDivider().getText().equals(state.divider)) {
-            modified = true;
             state.componentTypes = settingsComponent.getComponentTypes().getValues();
             state.extensionTypes = settingsComponent.getExtensionTypes().getValues();
             state.specTypes = settingsComponent.getSpecTypes().getValues();
+           return true;
         }
-        return modified;
+        return false;
     }
 
     @Override
